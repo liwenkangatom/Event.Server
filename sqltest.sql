@@ -18,18 +18,18 @@ Tip #1: Put GO on a line by itself to separate T-SQL batches.
 Tip #2: Select some T-SQL text in the editor and press `Ctrl+Shift+e` (`Cmd+Shift+e` on Mac) to execute the selection
 */  
 -- Add a new column 'pKey' to table 'ms_Tag' in schema 'Event.dbo'
-ALTER TABLE Event.dbo.ms_Tag
-  ADD pKey /*new_column_name*/ int /*new_column_datatype*/ NULL /*new_column_nullability*/
-GO
-SELECT * from sys.all_columns WHERE object_id = object_id('Event')
-GO
--- Select rows from a Table or View 'ms_tag' in schema 'Event.dbo'
-SELECT * FROM Event.dbo.ms_tag
-GO
+-- ALTER TABLE Event.dbo.ms_Tag
+--   ADD pKey /*new_column_name*/ int /*new_column_datatype*/ NULL /*new_column_nullability*/
+-- GO
+-- SELECT * from sys.all_columns WHERE object_id = object_id('Event')
+-- GO
+-- -- Select rows from a Table or View 'ms_tag' in schema 'Event.dbo'
+-- SELECT * FROM Event.dbo.ms_tag
+-- GO
 -- Select rows from a Table or View 'ms_Event' in schema 'Event.dbo'
 SELECT * FROM Event.dbo.ms_Event
-GO
--- Select rows from a Table or View 'ms_Tag_Event' in schema 'Event.dbo'
-SELECT * FROM Event.dbo.ms_Event_Tag	/* add search conditions here */
+-- GO
+-- -- Select rows from a Table or View 'ms_Tag_Event' in schema 'Event.dbo'
+-- SELECT * FROM Event.dbo.ms_Event_Tag	/* add search conditions here */
 	/* add search conditions here */
 	/* add search conditions here *

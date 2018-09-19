@@ -25,6 +25,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     }
   }, {
-    tableName: 'ms_Event_Tag'
+    tableName: 'ms_Event_Tag',
+    timestamps:false
   });
 };

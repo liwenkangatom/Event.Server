@@ -17,10 +17,11 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     DT: {
-      type: DataTypes.DATE,
+      type: DataTypes.mssql.DATE,
       allowNull: false
     }
   }, {
+    timestamps: false,
     tableName: 'ms_Event'
   });
 };
